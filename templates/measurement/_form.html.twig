@@ -1,0 +1,15 @@
+
+
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+    {{ form_row(form.location) }}
+
+    {{ form_row(form.date) }}
+
+    {{ form_row(form.celsius) }}
+
+<button class="btn btn-success">
+    {{ button_label|default('Zapisz') }}
+</button>
+
+{{ form_end(form) }}
